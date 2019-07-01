@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>嗨逗</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0" />
+    <link href="resource/css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="main shopcart-main">
+        <header class="main-header-title" data-style="order">
+            <section class="main-header-title-left"></section>
+            <label>购物车</label>
+            <section class="main-header-title-right" onclick="shopCart_right_click(this)">编辑</section>
+        </header>
+        <section class="main-header-a"></section>
+        <section class="shopcart_check">
+            <table cellpadding="0" cellspacing="0">
+                <colgroup>
+                    <col width="1" />
+                </colgroup>
+                <tr>
+                    <td><img src="resource/img/select.png" class="main-check shop_checkall" alt="" onclick="shop_checkall_click(this)" />全选</td>
+                </tr>
+            </table>
+        </section>
+        <section class="goods-address-url" data-style="shopcart">
+            <table cellpadding="0" cellspacing="0">
+                <colgroup>
+                    <col width="1" />
+                    <col width="1" />
+                </colgroup>
+                <tr>
+                    <td align="left" rowspan="3"><img src="resource/img/select.png" class="main-check shop_check" alt="" onclick="shop_checkchild_click(this)" /> </td>
+                    <td align="left" rowspan="3" onclick="location.href = 'Product_Details.html'"><img src="resource/img/Classification_Screen1.png" data-style="img" alt="" /></td>
+                    <td align="left" valign="top" colspan="2">苹果苹果苹果苹果苹苹果苹果苹果苹果苹苹果苹果苹果苹果苹</td>
+                    
+                    <td align="right" rowspan="3" data-style="shopcart_td"><img src="resource/img/goad1.png" alt="" data-style="img2" class="shopcart_list_del" /></td>
+                </tr>
+                <tr>
+                    
+                    <td align="left" valign="bottom">租期：<label>30天</label></td>
+                    <td align="left" valign="top" rowspan="2">
+                        <div>租金:<label>￥469-￥200</label></div>
+                        <div>押金:<label>￥4698</label></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left" valign="bottom">
+                        <table cellpadding="0" cellspacing="0" class="shop-number-table">
+                            <tbody>
+                                <tr>
+                                    <td align="center" valign="middle" onclick="product_number(this)" data-style="but">-</td>
+                                    <td align="center" valign="middle" data-style="number">0</td>
+                                    <td align="center" valign="middle" onclick="product_number(this)" data-style="but">+</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!--<ul class="product-popup-number shop-number">
+                            <li onclick="product_number(this)">-</li>
+                            <li data-style="number" style="width:30%">0</li>
+                            <li onclick="product_number(this)" data-style="t">+</li>
+                        </ul>-->
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section class="main-footer-a" data-style="product"></section>
+        <div class="main-footer shopcart-footer" data-style="product">
+            <table cellpadding="0" cellspacing="0" class="shopcart-footer-table">
+                <tr>
+                    <td align="left"><img src="resource/img/select.png" class="main-check shop_checkall" alt="" onclick="shop_checkall_click(this)" />全选</td>
+                    <td align="right"><span class="shopcart-price" id="shopcart_foot_price">合计：<label>￥222</label></span></td>
+                    <td align="right" data-style="td">
+                        <input type="button" name="name" value="去结算" class="main-but" id="shopcart_foot_but" onclick="location.href = 'Payment_Mode.html'" />
+                    </td>
+                </tr>
+                
+            </table>
+        </div>
+    </div>
+    <script src="resource/js/jquery-1.8.2.js"></script>
+    <script src="resource/js/html5.js"></script>
+    <script src="resource/js/public.js"></script>
+</body>
+</html>

@@ -1,0 +1,269 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>嗨逗</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0" />
+    <link href="resource/css/swiper.css" rel="stylesheet" />
+    <link href="resource/css/style.css" rel="stylesheet" />
+</head>
+<body>
+     <div class="main" id="main" data-style="product">
+        <header class="main-header-title" data-style="order">
+            <section class="main-header-title-left"></section>
+            <nav class="product-nav" id="product_nav">
+                <ul>
+                    <li data-style="bottom" onclick="product_tab_click(this)" data-class="product_info">商品</li>
+                    <li onclick="product_tab_click(this)" data-class="product_img">详情</li>
+                    <li onclick="product_tab_click(this)" data-class="product_specifications">规格</li>
+                    <li onclick="product_tab_click(this)" data-class="product_recommend">推荐</li>
+                </ul>
+            </nav>
+        </header>
+        <section class="main-header-a"></section>
+        <article class="product_img" style="display:none">
+            <section class="product-img-details-main">
+                <img src="resource/img/product_xiong.png" />
+
+                <div class="product-img-content">
+                    <div class="product-img-content-cenert">
+                        <p>泰迪熊泰迪熊泰迪熊泰迪熊泰迪熊泰迪熊泰迪熊泰迪熊泰迪熊泰迪熊泰迪熊</p>
+                    </div>
+                </div>
+
+            </section>
+            <section class="product-img-details-main">
+                <img src="resource/img/product_xiong.png" />
+                <div class="product-img-content">
+                    <div class="product-img-content-cenert">
+                        <p>泰迪熊泰迪熊泰迪熊泰迪熊泰迪熊泰迪熊泰迪熊泰迪熊泰迪熊泰迪熊泰迪熊</p>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <article class="product-specifications product_specifications" style="display:none">
+            <section class="product-specifications-center">
+                <section class="product-specifications-center-top">详细数据</section>
+                <table cellpadding="0" cellspacing="0" rules="all">
+                    <colgroup>
+                        <col width="60" />
+                    </colgroup>
+                    <tr>
+                        <td align="center">处理器器</td>
+                        <td align="left" data-style="td">四核 1.GHz主屏</td>
+                    </tr>
+                    <tr>
+                        <td align="center">处理器器</td>
+                        <td align="left" data-style="td">四核 1.GHz主屏</td>
+                    </tr>
+                    <tr>
+                        <td align="center">处理器器</td>
+                        <td align="left" data-style="td">四核 1.GHz主屏</td>
+                    </tr>
+                    <tr>
+                        <td align="center">处理器器</td>
+                        <td align="left" data-style="td">四核 1.GHz主屏</td>
+                    </tr>
+                    <tr>
+                        <td align="center">处理器器</td>
+                        <td align="left" data-style="td">四核 1.GHz主屏</td>
+                    </tr>
+                </table>
+            </section>
+        </article>
+        <article class="product-info product_info">
+            <section class="product-info-swp">
+                <div class="swiper-container" id="prod_img">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="resource/img/prod2.jpg" alt="" /></div>
+                        <div class="swiper-slide"><img src="resource/img/prod3.jpg" alt="" /></div>
+                    </div>
+                    <div class="swiper-pagination" id="prod_img-pagination"></div>
+                </div>
+            </section>
+            <section class="product-content">
+                <section class="product-content-center">
+                    <table cellpadding="0" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <td align="left" colspan="2">儿童泰迪儿童泰迪儿童泰迪儿童泰迪儿童泰迪儿童泰迪儿童泰迪儿童泰迪儿童泰迪儿童泰迪儿童泰迪儿童泰迪儿童泰迪儿童泰迪儿童泰迪儿童泰迪儿童泰迪儿童泰迪儿童泰迪儿童泰迪儿童泰迪</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td align="left" colspan="2">租金：<label>￥19-260</label></td>
+                            </tr>
+                            <tr>
+                                <td align="left" colspan="2">押金：<label>￥500</label></td>
+                            </tr>
+                            <tr>
+                                <td align="left" data-style="product" colspan="2">市场价：<del>￥1705</del></td>
+                            </tr>
+                        </tbody>
+                        <tfoot onclick="product_leaseterm()">
+                            <tr>
+                                <td align="left">选择租期</td>
+                                <td align="right"><img src="resource/img/prod_j.png" alt="" /></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </section>
+            </section>
+        </article>
+         <article class="product-recommend product_recommend" style="display:none">
+             <div class="main-product-list">
+                 <div class="main-product-list-child">
+                     <div class="product-prompt">新品放货可加20</div>
+                     <img src="resource/img/product1.png" alt="" data-style="imgtitle" />
+                     <table cellpadding="0" cellspacing="0">
+                         <tr>
+                             <td colspan="2" data-style="title">蔓越草莓曲奇饼干进口小吃西饼</td>
+                         </tr>
+                         <tr>
+                             <td align="left" data-style="price">租金 ￥5-50</td>
+                             <td rowspan="2" align="right" valign="middle"><img src="resource/img/shoppingcart.png" alt="" data-style="imgcart" /></td>
+                         </tr>
+                         <tr>
+                             <td align="left" data-style="price">押金 ￥100</td>
+                         </tr>
+                     </table>
+                 </div>
+                 <div class="main-product-list-child">
+                     <div class="product-prompt">新品放货可加20</div>
+                     <img src="resource/img/product1.png" alt="" data-style="imgtitle" />
+                     <table cellpadding="0" cellspacing="0">
+                         <tr>
+                             <td colspan="2" data-style="title">蔓越草莓曲奇饼干进口小吃西饼</td>
+                         </tr>
+                         <tr>
+                             <td align="left" data-style="price">租金 ￥5-50</td>
+                             <td rowspan="2" align="right" valign="middle"><img src="resource/img/shoppingcart.png" alt="" data-style="imgcart" /></td>
+                         </tr>
+                         <tr>
+                             <td align="left" data-style="price">押金 ￥100</td>
+                         </tr>
+                     </table>
+                 </div>
+                 <div class="main-product-list-child">
+                     <div class="product-prompt">新品放货可加20</div>
+                     <img src="resource/img/product1.png" alt="" data-style="imgtitle" />
+                     <table cellpadding="0" cellspacing="0">
+                         <tr>
+                             <td colspan="2" data-style="title">蔓越草莓曲奇饼干进口小吃西饼</td>
+                         </tr>
+                         <tr>
+                             <td align="left" data-style="price">租金 ￥5-50</td>
+                             <td rowspan="2" align="right" valign="middle"><img src="resource/img/shoppingcart.png" alt="" data-style="imgcart" /></td>
+                         </tr>
+                         <tr>
+                             <td align="left" data-style="price">押金 ￥100</td>
+                         </tr>
+                     </table>
+                 </div>
+                 <div class="main-product-list-child">
+                     <div class="product-prompt">新品放货可加20</div>
+                     <img src="resource/img/product1.png" alt="" data-style="imgtitle" />
+                     <table cellpadding="0" cellspacing="0">
+                         <tr>
+                             <td colspan="2" data-style="title">蔓越草莓曲奇饼干进口小吃西饼</td>
+                         </tr>
+                         <tr>
+                             <td align="left" data-style="price">租金 ￥5-50</td>
+                             <td rowspan="2" align="right" valign="middle"><img src="resource/img/shoppingcart.png" alt="" data-style="imgcart" /></td>
+                         </tr>
+                         <tr>
+                             <td align="left" data-style="price">押金 ￥100</td>
+                         </tr>
+                     </table>
+                 </div>
+             </div>
+         </article>
+        <section class="main-footer-a" data-style="product"></section>
+        <div class="main-header-info" data-style="product">
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <td><img src="resource/img/laba.png" /></td>
+                    <td>
+                        <div class="swiper-container" id="news">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">新版会员卡可以享受6折优惠，赶紧来抢啊！</div>
+                                <div class="swiper-slide">新版会员卡可以享受6折优惠</div>
+                                <div class="swiper-slide">新版会员卡</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td align="right" data-style="td">猛戳 ></td>
+                </tr>
+            </table>
+        </div>
+         <div class="main-footer" data-style="product">
+             <table cellpadding="0" cellspacing="0" class="product-footer-left">
+                 <tr>
+                     <td align="center"><div class="cartnumber"><span>99</span></div>购物车</td>
+                     <td align="center" onclick="product_collection(this)"><img src="resource/img/shou.png" alt="" /> 收藏</td>
+                 </tr>
+             </table>
+             <table cellpadding="0" cellspacing="0" class="product-footer-right">
+                 <tr>
+                     <td align="center" valign="middle">
+                         <input type="button" name="name" value="立即购买" class="main-but" />
+                         <input type="button" name="name" value="加入购物车" class="main-but" />
+                     </td>
+                 </tr>
+             </table>
+         </div>
+    </div>
+    <section class="product-main-mask product_mask" onclick="product_mask_click()" style="display:none"></section>
+    <section class="product-popup product_popup" style="display:none">
+        <div class="product-popup-center">
+            <table cellpadding="0" cellspacing="0" data-style="info">
+                <colgroup>
+                    <col width="1" />
+                </colgroup>
+                <tr>
+                    <td rowspan="3" align="left"><img src="resource/img/prod2.png" alt="" /></td>
+                    <td align="left" data-style="td" valign="top">苹果苹苹苹果苹果果苹果苹果苹苹苹果苹果果苹果苹果苹苹苹果苹果果苹果苹果</td>
+                </tr>
+                <tr>
+                    <td align="left" valign="bottom">租金：<label>￥150</label></td>
+                </tr>
+                <tr>
+                    <td align="left" valign="bottom">库存：<label>100件</label></td>
+                </tr>
+            </table>
+            <section class="product-popup-title">租期</section>
+            <section class="product-popup-date" id="product_data">
+                <ul>
+                    <li onclick="product_data_click(this)">15天</li>
+                    <li onclick="product_data_click(this)">30天</li>
+                    <li onclick="product_data_click(this)">60天</li>
+                </ul>
+            </section>
+            <section class="product-popup-title">数量</section>
+            <ul class="product-popup-number">
+                <li onclick="product_number(this)">-</li>
+                <li data-style="number">0</li>
+                <li onclick="product_number(this)">+</li>
+            </ul>
+            <input type="button" name="name" value="确    定" class="main-but" onclick="product_save()"/>
+        </div>
+    </section>
+    <script src="resource/js/jquery-1.8.2.js"></script>
+    <script src="resource/js/html5.js"></script>
+    <script src="resource/js/public.js"></script>
+    <script src="resource/js/swiper.js"></script>
+    <script>
+        var news = new Swiper('#news', {
+            autoplay: 3000,
+            speed: 1000,
+            direction: 'vertical'
+        });
+        var prod_img = new Swiper('#prod_img', {
+            //autoplay: 3000,
+            //speed: 1000,
+            pagination: "#prod_img-pagination",
+        });
+    </script>
+</body>
+</html>

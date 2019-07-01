@@ -1,0 +1,196 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>嗨逗</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="format-detection" content="telephone=no">
+    
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0" />
+    <link href="resource/css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="main-mask" id="main_mask"></div>
+    <div class="window" id="recharge" data-style="my">
+        <div class="window-header">会员校验</div>
+        <table cellpadding="0" cellspacing="0" class="window-table">
+            <tbody>
+                <tr>
+                    <td align="center" colspan="2"><input type="text" name="name" placeholder="请输入短信校验码" class="window-text" /></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td align="right"><input type="button" name="name" value="取消" class="main-but" onclick="window_close('recharge')" /></td>
+                    <td align="left"><input type="button" name="name" value="确定" class="main-but" onclick="window_close('recharge')" /></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <div class="main">
+        <header class="main-header-title" data-style="order">
+            <section class="main-header-title-left"></section>
+            <label>我的</label>
+        </header>
+        <section class="main-header-a"></section>
+        <section class="my-header-main">
+            <div class="my-header-main-portrait">
+            </div>
+            <label class="my-header-main-name">13851658864</label>
+            <section class="my-header-main-top">
+                <div>
+                    <img src="resource/img/star.png" />
+                    <label>黄金会员</label>
+                </div>
+            </section>
+            <section class="my-header-main-bottom">
+                <ul>
+                    <li>我的收藏（0）</li>
+                    <li>|</li>
+                    <li>我的关注（5）</li>
+                </ul>
+            </section>
+        </section>
+        <section class="goods-address-url" data-style="my" onclick="location.href = 'Order_List.html'">
+            <table cellpadding="0" cellspacing="0">
+                <colgroup>
+                    <col width="1" />
+                </colgroup>
+                <tr>
+                    <td align="left"><img src="resource/img/my13.png" alt="" data-style="img1" /></td>
+                    <td align="left">全部订单</td>
+                    <td align="right"><img src="resource/img/prod_j.png" alt="" /></td>
+                </tr>
+            </table>
+        </section>
+        <section class="goods-address-url" data-style="my_tab">
+            <table cellpadding="0" cellspacing="0" id="my_tab">
+                <tr>
+                    <td align="center" onclick="my_tab_click(this)" data-a="a"><img src="resource/img/my1.png" alt="" /> 待支付</td>
+                    <td align="center" data-style="color">|</td>
+                    <td align="center" onclick="my_tab_click(this)" data-a="a"><img src="resource/img/my2.png" alt="" /> 已支付</td>
+                    <td align="center" data-style="color">|</td>
+                    <td align="center" onclick="my_tab_click(this)" data-a="a"><img src="resource/img/my3.png" alt="" /> 已取消</td>
+                    <td align="center" data-style="color">|</td>
+                    <td align="center" onclick="my_tab_click(this)" data-a="a"><img src="resource/img/my4.png" alt="" /> 已收货</td>
+                </tr>
+            </table>
+        </section>
+        <section class="goods-address-url" data-style="my_assets">
+            <table cellpadding="0" cellspacing="0">
+                <colgroup>
+                    <col width="1"/>
+                </colgroup>
+                <tr>
+                    <td align="left" valign="top" rowspan="4"><img src="resource/img/my5.png" alt="" data-style="img1" /></td>
+                    <td align="left" valign="top"><label>我的账户资产</label></td>
+                    <td align="right"><img src="resource/img/switch.png" alt="" class="switch-but" onclick="my_switch_click(this)" /></td>
+                </tr>
+                <tr class="my_assets_dis" style="display:none">
+                    <td align="left">上次充值</td>
+                    <td align="right"><span>￥100</span></td>
+                </tr>
+                <tr class="my_assets_dis" style="display:none">
+                    <td colspan="2" align="left">最近一次消费2015-10-19使用￥500</td>
+                </tr>
+                <tr class="my_assets_dis" style="display:none">
+                    <td align="left">余额</td>
+                    <td align="right"><span>￥100</span></td>
+                </tr>
+            </table>
+        </section>
+        <section class="goods-address-url" data-style="my_assets">
+            <table cellpadding="0" cellspacing="0">
+                <colgroup>
+                    <col width="1"/>
+                </colgroup>
+                <tr onclick="my_recommendCode_click(this)">
+                    <td align="left" valign="top" rowspan="2"><img src="resource/img/my12.png" alt="" data-style="img1" /></td>
+                    <td align="left" valign="top"><label>我的推荐码</label></td>
+                    <td align="right"><img src="resource/img/prod_j.png" alt="" id="my_recommendCode_p" /></td>
+                </tr>
+                <tr id="my_recommendCode" style="display:none">
+                    <td align="left">邀请码</td>
+                    <td align="right"><span>5YH7ED</span></td>
+                </tr>
+            </table>
+        </section>
+        <div class="my-foot">
+            <section class="goods-address-url" data-style="my" onclick="location.href = 'Coupon.html'">
+                <table cellpadding="0" cellspacing="0">
+                    <colgroup>
+                        <col width="1" />
+                    </colgroup>
+                    <tr>
+                        <td align="left"><img src="resource/img/my11.png" alt="" data-style="img1" /></td>
+                        <td align="left"><label>我的优惠券</label></td>
+                        <td align="right"><img src="resource/img/prod_j.png" alt="" /></td>
+                    </tr>
+                </table>
+            </section>
+            <section class="goods-address-url" data-style="my" onclick="location.href = 'Account_Record.html'">
+                <table cellpadding="0" cellspacing="0">
+                    <colgroup>
+                        <col width="1" />
+                    </colgroup>
+                    <tr>
+                        <td align="left"><img src="resource/img/my10.png" alt="" data-style="img1" /></td>
+                        <td align="left">我的账户记录</td>
+                        <td align="right"><img src="resource/img/prod_j.png" alt="" /></td>
+                    </tr>
+                </table>
+            </section>
+            <section class="goods-address-url" data-style="my">
+                <table cellpadding="0" cellspacing="0">
+                    <colgroup>
+                        <col width="1" />
+                    </colgroup>
+                    <tr>
+                        <td align="left"><img src="resource/img/my9.png" alt="" data-style="img1" /></td>
+                        <td align="left">一键客服</td>
+                        <td align="right"><img src="resource/img/prod_j.png" alt="" /></td>
+                    </tr>
+                </table>
+            </section>
+            <section class="goods-address-url" data-style="my">
+                <table cellpadding="0" cellspacing="0">
+                    <colgroup>
+                        <col width="1" />
+                    </colgroup>
+                    <tr>
+                        <td align="left"><img src="resource/img/my7.png" alt="" data-style="img1" /></td>
+                        <td align="left">我的收藏</td>
+                        <td align="right"><img src="resource/img/prod_j.png" alt="" /></td>
+                    </tr>
+                </table>
+            </section>
+            <section class="goods-address-url" data-style="my">
+                <table cellpadding="0" cellspacing="0">
+                    <colgroup>
+                        <col width="1" />
+                    </colgroup>
+                    <tr>
+                        <td align="left"><img src="resource/img/my6.png" alt="" data-style="img1" /></td>
+                        <td align="left">我的关注</td>
+                        <td align="right"><img src="resource/img/prod_j.png" alt="" /></td>
+                    </tr>
+                </table>
+            </section>
+            <section class="goods-address-url" data-style="my">
+                <table cellpadding="0" cellspacing="0">
+                    <colgroup>
+                        <col width="1" />
+                    </colgroup>
+                    <tr>
+                        <td align="left"><img src="resource/img/my8.png" alt="" data-style="img1" /></td>
+                        <td align="left">意见反馈</td>
+                        <td align="right"><img src="resource/img/prod_j.png" alt="" /></td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+    </div>
+    <script src="resource/js/jquery-1.8.2.js"></script>
+    <script src="resource/js/html5.js"></script>
+    <script src="resource/js/public.js"></script>
+</body>
+</html>

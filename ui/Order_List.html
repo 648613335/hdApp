@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>嗨逗</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0" />
+    <link href="resource/css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="main">
+        <header class="main-header-title" data-style="order">
+            <section class="main-header-title-left"></section>
+            <label>订单列表</label>
+        </header>
+        <section class="main-header-a"></section>
+        <nav class="order-tab" id="order_tab">
+            <ul>
+                <li data-style="color" onclick="order_tab_click(this)">全部订单</li>
+                <li onclick="order_tab_click(this)">待支付</li>
+                <li onclick="order_tab_click(this)">已取消</li>
+                <li onclick="order_tab_click(this)">已支付</li>
+                <li onclick="order_tab_click(this)">已完成</li>
+            </ul>
+        </nav>
+        <section class="order-main-list">
+            <article class="order-info">
+                <table cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td align="left" valign="middle" data-style="td1"><label>订单号：1000000001000010</label></td>
+                        <td align="right" valign="middle"><span>待支付</span></td>
+                    </tr>
+                </table>
+            </article>
+            <article class="order-list">
+                <ul>
+                    <li onclick="location.href = 'Product_Details.html'">
+                        <table cellpadding="0" cellspacing="0">
+                            <colgroup>
+                                <col width="1" />
+                            </colgroup>
+                            <tr>
+                                <td rowspan="2" align="center"><img src="resource/img/picture_01.png" alt="" /></td>
+                                <td colspan="2" align="left" valign="top" data-style="content">苹果苹果苹果苹果苹果苹果苹果苹果苹果苹果苹果苹果苹果苹果苹果苹果苹果</td>
+                            </tr>
+                            <tr>
+                                <td align="left" valign="bottom" data-style="number">￥150</td>
+                                <td align="right" valign="bottom" data-style="number">x1</td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li onclick="location.href = 'Product_Details.html'">
+                        <table cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td rowspan="2" align="center"><img src="resource/img/picture_01.png" alt="" /></td>
+                                <td colspan="2" align="left" valign="top" data-style="content">苹果苹果苹果苹果苹果苹果苹果苹果苹果苹果苹果苹果苹果苹果苹果苹果苹果</td>
+                            </tr>
+                            <tr>
+                                <td align="left" valign="bottom" data-style="number">￥150</td>
+                                <td align="right" valign="bottom" data-style="number">x1</td>
+                            </tr>
+                        </table>
+                    </li>
+                </ul>
+                <section class="order-list-info">
+                    共计 2 件商品 合计：<label>￥3000.00</label>
+                </section>
+            </article>
+        </section>
+        <section class="order-main-list">
+            <article class="order-info">
+                <table cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td align="left" valign="middle" data-style="td1"><label>订单号：1000000001000010</label></td>
+                        <td align="right" valign="middle"><span>待支付</span></td>
+                    </tr>
+                </table>
+            </article>
+            <article class="order-list">
+                <ul>
+                    <li>
+                        <table cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td rowspan="2" align="center"><img src="resource/img/picture_01.png" alt="" /></td>
+                                <td colspan="2" align="left" data-style="content">苹果苹果苹果苹果苹果苹果苹果苹果苹果苹果苹果苹果苹果苹果苹果苹果苹果</td>
+                            </tr>
+                            <tr>
+                                <td align="left" valign="bottom" data-style="number">￥150</td>
+                                <td align="right" valign="bottom" data-style="number">x1</td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                        <table cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td rowspan="2" align="center"><img src="resource/img/picture_01.png" alt="" /></td>
+                                <td colspan="2" align="left" data-style="content">苹果苹果苹果苹果苹果苹果苹果苹果苹果苹果苹果苹果苹果苹果苹果苹果苹果</td>
+                            </tr>
+                            <tr>
+                                <td align="left" valign="bottom" data-style="number">￥150</td>
+                                <td align="right" valign="bottom" data-style="number">x1</td>
+                            </tr>
+                        </table>
+                    </li>
+                </ul>
+                <section class="order-list-info">
+                    共计 2 件商品 合计：<label>￥3000.00</label>
+                </section>
+            </article>
+        </section>
+        <section class="main-footer-a"></section>
+        <footer class="main-footer">
+            <table cellpadding="0" cellspacing="0">
+                <colgroup></colgroup>
+                <tr>
+                    <td align="center" onclick="location.href = 'Index.html'">
+                        <img src="resource/img/home.png" />
+                        首页
+                    </td>
+                    <td align="center">
+                        <img src="resource/img/fenlei.png" />
+                        分类
+                    </td>
+                    <td align="center" onclick="location.href = 'Classification_Screen.html'">
+                        <img src="resource/img/sousuo.png" />
+                        搜索
+                    </td>
+                    <td align="center" onclick="location.href = 'Shopping_Cart.html'">
+                        <img src="resource/img/gouwuche.png" />
+                        购物车
+                    </td>
+                    <td align="center" onclick="location.href = 'My.html'">
+                        <img src="resource/img/user.png" />
+                        我的
+                    </td>
+                </tr>
+            </table>
+        </footer>
+    </div>
+    <script src="resource/js/jquery-1.8.2.js"></script>
+    <script src="resource/js/html5.js"></script>
+    <script src="resource/js/public.js"></script>
+</body>
+</html>

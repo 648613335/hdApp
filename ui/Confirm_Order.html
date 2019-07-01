@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>嗨逗</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0" />
+    <link href="resource/css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="main">
+        <header class="main-header-title" data-style="order">
+            <section class="main-header-title-left"></section>
+            <label>确认订单</label>
+        </header>
+        <section class="main-header-a"></section>
+        <section class="goods-address-url" onclick="location.href = 'Goods_Address.html'">
+            <table cellpadding="0" cellspacing="0">
+                <colgroup>
+                    <col width="1"/>
+                </colgroup>
+                <tr>
+                    <td align="left"><img src="resource/img/address1.png" alt="" data-style="img1" /></td>
+                    <td align="left">请输入收货地址</td>
+                    <td align="right"><img src="resource/img/prod_j.png" alt="" /></td>
+                </tr>
+            </table>
+        </section>
+        <section class="goods-address-url" data-style="confirm_goods" onclick="location.href = 'Goods_Address.html'">
+            <table cellpadding="0" cellspacing="0">
+                <colgroup>
+                    <col width="1" />
+                </colgroup>
+                <tr>
+                    <td align="left"><img src="resource/img/address1.png" alt="" data-style="img1" /></td>
+                    <td align="left"><label class="goods-address-url-name">王壮杰</label> <span>1381****864</span></td>
+                    <td align="right" rowspan="2"><img src="resource/img/prod_j.png" alt="" /></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <p><label>南京市</label> <label>建邺区</label> <label>奥体名座</label></p>
+                        <p>苏宁易购苏宁易购苏宁易购苏宁易购</p>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <article class="order-list" data-style="confirm">
+            <ul>
+                <li onclick="location.href = 'Product_Details.html'">
+                    <table cellpadding="0" cellspacing="0">
+                        <colgroup>
+                            <col width="1" />
+                        </colgroup>
+                        <tr>
+                            <td rowspan="3" align="center"><img src="resource/img/picture_01.png" alt="" /></td>
+                            <td colspan="2" align="left" valign="top" data-style="content">果果苹苹果苹苹果苹果</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">租期：<label>3000天</label></td>
+                        </tr>
+                        <tr>
+                            <td align="left" valign="bottom">&nbsp;&nbsp;&nbsp;&nbsp;￥：<label>150</label></td>
+                            <td align="right" valign="bottom">数量：<label>x1</label></td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <table cellpadding="0" cellspacing="0">
+                        <colgroup>
+                            <col width="1" />
+                        </colgroup>
+                        <tr>
+                            <td rowspan="3" align="center"><img src="resource/img/picture_01.png" alt="" /></td>
+                            <td colspan="2" align="left" valign="top" data-style="content">果果苹苹果苹苹果苹果</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">租期：<label>3000天</label></td>
+                        </tr>
+                        <tr>
+                            <td align="left" valign="bottom">&nbsp;&nbsp;&nbsp;&nbsp;￥：<label>150</label></td>
+                            <td align="right" valign="bottom">数量：<label>x1</label></td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+        </article>
+        <section class="goods-address-url">
+            <table cellpadding="0" cellspacing="0" onclick="confirm_coupon_click()">
+                <colgroup></colgroup>
+                <tr>
+                    <td align="left">优惠券</td>
+                    <td align="right"><img src="resource/img/prod_j.png" alt="" id="confirm_coupon_img" /></td>
+                </tr>
+            </table>
+            <table cellpadding="0" cellspacing="0" class="confirm-coupon-list"  id="confirm_coupon" style="display:none">
+                <colgroup>
+                    <col width="1" />
+                </colgroup>
+                <tr>
+                    <td align="left"><img src="resource/img/select.png" class="confirm_coupon_check main-check" alt="" onclick="confirm_coupon_check(this)" /></td>
+                    <td align="left" data-style="tda">满500减5000</td>
+                    <td align="right" data-style="tdb">使用范围：苹果店铺</td>
+                    <td align="right" data-style="tdb">有效期：2016/10/10</td>
+                </tr>
+                <tr>
+                    <td align="left"><img src="resource/img/select.png" class="confirm_coupon_check main-check" onclick="confirm_coupon_check(this)" /></td>
+                    <td align="left" data-style="tda">满500减5000</td>
+                    <td align="right" data-style="tdb">使用范围：苹果店铺</td>
+                    <td align="right" data-style="tdb">有效期：2016/10/10</td>
+                </tr>
+            </table>
+        </section>
+        <div class="confirm-bottom-main" data-style="confirm_bottom">
+            <section class="goods-address-url">
+                <table cellpadding="0" cellspacing="0">
+                    <colgroup></colgroup>
+                    <tr>
+                        <td align="left">订单总计</td>
+                        <td align="right"><label>￥300.00</label></td>
+                    </tr>
+                </table>
+            </section>
+            <section class="goods-address-url">
+                <table cellpadding="0" cellspacing="0">
+                    <colgroup></colgroup>
+                    <tr>
+                        <td align="left">租金</td>
+                        <td align="right"><label>￥300.00</label></td>
+                    </tr>
+                </table>
+            </section>
+            <section class="goods-address-url">
+                <table cellpadding="0" cellspacing="0">
+                    <colgroup></colgroup>
+                    <tr>
+                        <td align="left">押金</td>
+                        <td align="right"><label>￥300.00</label></td>
+                    </tr>
+                </table>
+            </section>
+            <section class="goods-address-url">
+                <table cellpadding="0" cellspacing="0">
+                    <colgroup></colgroup>
+                    <tr>
+                        <td align="left">运费</td>
+                        <td align="right"><label>- ￥300.00</label></td>
+                    </tr>
+                </table>
+            </section>
+            <section class="goods-address-url">
+                <table cellpadding="0" cellspacing="0">
+                    <colgroup></colgroup>
+                    <tr>
+                        <td align="left">优惠</td>
+                        <td align="right"><label>+ ￥300.00</label></td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+        <section class="main-footer-a" data-style="product"></section>
+        <div class="main-footer" data-style="product">
+            <table cellpadding="0" cellspacing="0" class="product-footer-left" data-style="confirm_order">
+                <tr>
+                    <td align="center">应付金额：￥168003</td>
+                </tr>
+            </table>
+            <table cellpadding="0" cellspacing="0" class="product-footer-right" data-style="confirm_order">
+                <tr>
+                    <td align="right" valign="middle">
+                        <input type="button" name="name" value="提交订单" class="main-but" onclick="location.href='Payment_Mode.html'" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="resource/js/jquery-1.8.2.js"></script>
+    <script src="resource/js/html5.js"></script>
+    <script src="resource/js/public.js"></script>
+</body>
+</html>

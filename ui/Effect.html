@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>嗨逗</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0" />
+
+    <link href="resource/css/style.css" rel="stylesheet" />
+
+    <link href="resource/css/keyframes.css" rel="stylesheet" /><!--加载弹窗页面必须引用的文件，你们也可以把代码放进 style.css-->
+
+    <script src="resource/js/jquery-1.8.2.js"></script>
+    <style>
+        .main-but{width:80%;margin:1rem auto;display:block}
+    </style>
+    <script>
+        $(function () {
+            $("#main_error").css("margin-left", "-" + ($("#main_error").outerWidth() / 2) + "px");
+        });
+        //等待窗 - 打开
+        function mask_open() {
+            $("#main_mask,#main_wait").css("display", "block");
+        }
+        //等待窗 - 关闭
+        function mask_close() {
+            $("#main_mask,#main_wait").css("display", "none");
+        }
+
+
+        //错误提示  text:提示字
+        var time = "";
+        function error_open(text) {
+            $("#main_error").css("display","none");
+            clearTimeout(time);
+            $("#main_error").text(text);
+            $("#main_error").css("margin-left", "-" + ($("#main_error").outerWidth() / 2) + "px");
+            $("#main_error").fadeIn();
+            time = setTimeout(function () {
+                $("#main_error").fadeOut();
+            }, 2000);
+        }
+
+    </script>
+</head>
+<body>
+    <div class="main-error" id="main_error"></div>
+
+    <div class="main-mask" id="main_mask"></div>
+
+    <div class="main-wait" id="main_wait">
+        <img src="resource/img/loading.png" />
+    </div>
+
+
+    <input type="button" name="name" value="等待窗口" class="main-but" onclick="mask_open()" />
+    <input type="button" name="name" value="错误提示" class="main-but" onclick="error_open('请输入有效的密码')" />
+    
+</body>
+</html>

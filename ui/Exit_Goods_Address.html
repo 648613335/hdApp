@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>嗨逗</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0" />
+    <link href="resource/css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="main" data-style="product">
+        <header class="main-header-title" data-style="order">
+            <section class="main-header-title-left"></section>
+            <label>新增收货地址</label>
+        </header>
+        <section class="main-header-a"></section>
+        <table cellpadding="0" cellspacing="0" rules="rows" class="agadder-table">
+            <tr>
+                <td align="left" colspan="2">收 货 人 ：<input type="text" name="name" /></td>
+            </tr>
+            <tr>
+                <td align="left" colspan="2">手机号码：<input type="tel" name="name" /></td>
+            </tr>
+            <tr>
+                <td align="left">
+                    所在地区：
+                    <select>
+                        <option>江苏省</option>
+                    </select>
+                    <select>
+                        <option>南京市</option>
+                    </select>
+                    <select>
+                        <option>建邺区</option>
+                    </select>
+                </td>
+                <td align="right"><img src="resource/img/prod_j.png" data-style="img" /></td>
+            </tr>
+            <tr>
+                <td align="left">
+                    所在街道：
+                    <select data-style="sel">
+                        <option>奥体大街</option>
+                    </select>
+                </td>
+                <td align="right"><img src="resource/img/prod_j.png" data-style="img" /></td>
+            </tr>
+            <tr>
+                <td align="left" colspan="2">详细地址：<input type="text" name="name" /></td>
+            </tr>
+            <tr>
+                <td align="left" colspan="2">
+                    设为默认地址：
+                    <p>注：每次下单时会使用该地址</p>
+                    <img src="resource/img/switch.png" alt="" class="switch-but" onclick="address_default(this)" />
+                </td>
+            </tr>
+        </table>
+        <input type="button" name="name" value="保存并使用" class="main-but" data-style="add_goods_address" />
+        <section class="main-footer-a"></section>
+        <footer class="main-footer">
+            <table cellpadding="0" cellspacing="0">
+                <colgroup></colgroup>
+                <tr>
+                    <td align="center" onclick="location.href = 'Index.html'">
+                        <img src="resource/img/home.png" />
+                        首页
+                    </td>
+                    <td align="center">
+                        <img src="resource/img/fenlei.png" />
+                        分类
+                    </td>
+                    <td align="center" onclick="location.href = 'Classification_Screen.html'">
+                        <img src="resource/img/sousuo.png" />
+                        搜索
+                    </td>
+                    <td align="center" onclick="location.href = 'Shopping_Cart.html'">
+                        <img src="resource/img/gouwuche.png" />
+                        购物车
+                    </td>
+                    <td align="center" onclick="location.href = 'My.html'">
+                        <img src="resource/img/user.png" />
+                        我的
+                    </td>
+                </tr>
+            </table>
+        </footer>
+    </div>
+    <script src="resource/js/jquery-1.8.2.js"></script>
+    <script src="resource/js/html5.js"></script>
+    <script src="resource/js/public.js"></script>
+</body>
+</html>
